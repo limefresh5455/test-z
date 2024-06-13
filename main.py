@@ -1,25 +1,5 @@
-import threading
-import requests
-from urllib.parse import urlparse
-from bs4 import BeautifulSoup
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from fastapi import FastAPI, UploadFile, File, HTTPException, Query
-import pandas as pd
-import speech_recognition as sr
-import moviepy.editor as mp
-import os
-import PyPDF2
-from pytube import YouTube
-from openai import OpenAI
-from dotenv import load_dotenv, find_dotenv
-from pathlib import Path
-import tempfile
-from moviepy.editor import VideoFileClip
-import urllib.parse
-from typing import List
-import concurrent.futures
-import time
-import difflib
+
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 
