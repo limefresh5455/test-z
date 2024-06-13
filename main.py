@@ -23,15 +23,6 @@ import difflib
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 
-env_path = Path(".") / ".env"
-load_dotenv(dotenv_path=env_path)
-api_key = os.getenv('OPENAI_API_KEY')
-app = FastAPI()
-client = OpenAI()
-#______________________________________________generate_categories________________________________________________________________
-
-
-
 app = FastAPI(title="FastAPI APP Endpoints")
 app.add_middleware(
     CORSMiddleware,
@@ -41,6 +32,17 @@ app.add_middleware(
     allow_headers=["*"]
 )
 app.add_middleware(GZipMiddleware)
+
+env_path = Path(".") / ".env"
+load_dotenv(dotenv_path=env_path)
+api_key = os.getenv('OPENAI_API_KEY')
+app = FastAPI()
+client = OpenAI()
+#______________________________________________generate_categories________________________________________________________________
+
+
+
+
 def generate(content):
     topics_df = pd.read_csv("topics.csv")
 
