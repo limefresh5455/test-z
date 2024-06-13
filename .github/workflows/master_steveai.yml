@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'steveai'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5EFFBD119C7049F696EAEBE433896E2B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E77E55B2DE06400C8D5AA5470D6044ED }}
