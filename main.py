@@ -1,34 +1,34 @@
 
 from fastapi import FastAPI
-import pandas as pd
-import difflib
+# import pandas as pd
+# import difflib
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
-from pathlib import Path
-from dotenv import load_dotenv
-import os
-import requests
-from urllib.parse import urlparse
-from bs4 import BeautifulSoup
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from fastapi import FastAPI, UploadFile, File, HTTPException, Query
-import pandas as pd
-import speech_recognition as sr
-import moviepy.editor as mp
-import PyPDF2
-from pytube import YouTube
-from openai import OpenAI
-import tempfile
-from moviepy.editor import VideoFileClip
-import urllib.parse
-from typing import List
-import concurrent.futures
-import time
-import difflib
+# from pathlib import Path
+# from dotenv import load_dotenv
+# import os
+# import requests
+# from urllib.parse import urlparse
+# from bs4 import BeautifulSoup
+# from langchain.text_splitter import RecursiveCharacterTextSplitter
+# from fastapi import FastAPI, UploadFile, File, HTTPException, Query
+# import pandas as pd
+# import speech_recognition as sr
+# import moviepy.editor as mp
+# import PyPDF2
+# from pytube import YouTube
+# from openai import OpenAI
+# import tempfile
+# from moviepy.editor import VideoFileClip
+# import urllib.parse
+# from typing import List
+# import concurrent.futures
+# import time
+# import difflib
 
-env_path = Path(".") / ".env"
-load_dotenv(dotenv_path=env_path)
-api_key = os.getenv('OPENAI_API_KEY')
+# env_path = Path(".") / ".env"
+# load_dotenv(dotenv_path=env_path)
+# api_key = os.getenv('OPENAI_API_KEY')
 
 client = OpenAI()
 
