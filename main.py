@@ -30,7 +30,7 @@ from fastapi.middleware.gzip import GZipMiddleware
 # load_dotenv(dotenv_path=env_path)
 # api_key = os.getenv('OPENAI_API_KEY')
 
-client = OpenAI()
+#client = OpenAI()
 
 app = FastAPI(title="FastAPI APP Endpoints")
 app.add_middleware(
